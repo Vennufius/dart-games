@@ -94,7 +94,9 @@ const Home: NextPage = () => {
               <div>
                 <h1>GAME OVER</h1>
                 <p>You got {totalScore} points!</p>
-                <button onClick={restartGame}>Play again!</button>
+                <button className="btn" onClick={restartGame}>
+                  Play again!
+                </button>
               </div>
             )}
             {!gameOver && (
