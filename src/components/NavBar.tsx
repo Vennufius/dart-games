@@ -46,6 +46,13 @@ const NavBar: React.FC = () => {
                 >
                   High Segment Scoring
                 </Link>
+                <Link
+                  href="/finish-training"
+                  tabIndex={0}
+                  className="flex w-full px-4 py-2 text-left text-sm"
+                >
+                 Train Finishing 
+                </Link>
               </div>
             </div>
           </div>

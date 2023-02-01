@@ -35,9 +35,12 @@ const AuthShowcase: React.FC = () => {
         {sessionData && (
           <div className="grid gap-4 text-white">
             <h4 className="mb-5 text-3xl">Start your Darting journey today</h4>
-            <div className="mb-5 grid place-content-center">
+            <div className="grid place-content-center gap-4 text-center">
               <Link href={"/high-segment-scoring"} className="btn w-auto">
                 High Segment Scoring
+              </Link>
+              <Link href={"/finish-training"} className="btn w-auto">
+                Train Finishing
               </Link>
             </div>
           </div>

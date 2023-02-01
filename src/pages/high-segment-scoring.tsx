@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { useState } from "react";
 import { api } from "../utils/api";
 
-const Home: NextPage = () => {
+const HighSegmentScoring: NextPage = () => {
   const MAX_ROUNDS = 5;
   const utils = api.useContext();
   const highSegmentScoringQuery =
@@ -187,4 +187,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default HighSegmentScoring;
