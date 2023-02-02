@@ -101,7 +101,7 @@ const TrainFinishing: NextPage = () => {
                 <div>
                   <div className="flex gap-2 items-end">
                     <p>Choose mode </p>
-                    <FaRegQuestionCircle onClick={() => setHelp(true)} />
+                    <FaRegQuestionCircle className="cursor-pointer" onClick={() => setHelp(true)} />
                   </div>
                   <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 my-5">
                     <button className={`btn ${mode === 'easy' ? 'border-x-4 border-[hsl(185,80%,65%)]' : ''}`} onClick={() => setMode('easy')} disabled={gameStarted}>Easy</button>
@@ -149,7 +149,7 @@ const TrainFinishing: NextPage = () => {
                 <span>Pro:</span><span>1 thorws, 3 darts per throw</span>
               </div>
               <p className="my-2 text-md">Gameplay:</p>
-              <p className="text-sm ">You have a set amount of throws (determined by the mode) to finish the target score. Finishing is done in the same manner as in 501 where you have to finish in a double. So to beat the game, you need to get to 0 from the target score before running out of throws and darts. If you manage to get to 0, you can increment the target by pressing the button "+1 Target", otherwise you'll have to try again.</p>
+              <p className="text-sm ">You have a set amount of throws (determined by the mode) to finish the target score. Finishing is done in the same manner as in 501 where you have to finish in a double. So to beat the game, you need to get to 0 from the target score before running out of throws and darts. If you manage to get to 0, you can increment the target by pressing the button &quot;+1 Target&quot;, otherwise you&apos;ll have to try again.</p>
             <div>
             </div>
             </div>
