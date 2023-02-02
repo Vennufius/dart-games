@@ -39,7 +39,7 @@ const AuthShowcase: React.FC = () => {
               <Link href={"/high-segment-scoring"} className="btn w-auto">
                 High Segment Scoring
               </Link>
-              <Link href={"/finish-training"} className="btn w-auto">
+              <Link href={"/train-finishing"} className="btn w-auto">
                 Train Finishing
               </Link>
             </div>
