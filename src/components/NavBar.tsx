@@ -5,11 +5,10 @@ import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
 const NavBar: React.FC = () => {
   const { data: session } = useSession();
   return (
-    <div className="grid grid-cols-3 bg-[#001e29] text-white">
-      <div></div>
+    <div className="grid grid-cols-2 bg-black text-white">
       <Link
         href="/"
-        className="py-0 text-center text-xl font-bold text-[hsl(185,80%,65%)] md:py-4"
+        className="py-0 ml-5 text-xl font-bold text-zinc-400 md:py-4"
       >
         DART GAMES
       </Link>
