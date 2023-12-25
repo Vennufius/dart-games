@@ -6,11 +6,11 @@ const HighSegmentScoring: NextPage = () => {
   const MAX_ROUNDS = 5;
   const utils = api.useContext();
   const highSegmentScoringQuery =
-    api.highSegmentScoringRouter.getAll.useQuery();
+    api.highSegmentScoringRouter.getHighscores.useQuery();
   const highSegmentScoringCreate =
     api.highSegmentScoringRouter.create.useMutation({
       async onSuccess() {
-        await utils.highSegmentScoringRouter.getAll.invalidate();
+        await utils.highSegmentScoringRouter.getHighscores.invalidate();
       },
     });
   const segments = ["20", "19", "18", "Bull"];
@@ -171,10 +171,9 @@ const HighSegmentScoring: NextPage = () => {
           <h1>Highscores:</h1>
           <ul>
             {highSegmentScoringQuery.data
-              ?.sort((a, b) => b.score - a.score)
-              .map((result) => (
+              ?.map((result) => (
                 <li key={result.id}>
-                  {result.createdAt.toLocaleDateString()} - {result.score} pts
+                  {result.user.name} - {result.createdAt.toLocaleDateString()} - {result.score} pts
                 </li>
               ))}
           </ul>

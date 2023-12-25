@@ -88,6 +88,10 @@ const TrainFinishing: NextPage = () => {
     setSuccess(false);
     setGameStarted(false);
     setGameOver(false);
+
+    const scoreEl = document.getElementById("score") as HTMLInputElement;
+    scoreEl.value = "";
+    scoreEl.focus();
   }
 
   function undoScore() {
