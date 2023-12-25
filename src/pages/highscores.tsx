@@ -20,7 +20,7 @@ function Highscores({ scores }: HighscoreProps) {
                     </tr>
                 </thead>
                 <tbody className="text-left">
-                    {scores.map((item) => (
+                    {scores?.map((item) => (
                         <tr key={item.id}>
                             <th className="border border-white/10 p-2">{item.username}</th>
                             <th className="border border-white/10 p-2">{item.date}</th>
