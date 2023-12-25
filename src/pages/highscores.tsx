@@ -31,6 +31,6 @@ function Highscores({ scores }: HighscoreProps) {
             </table>
         </div>
     );
-};
+}
 
 export default Highscores;
