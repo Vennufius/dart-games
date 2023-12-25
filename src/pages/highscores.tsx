@@ -14,14 +14,16 @@ function Highscores({ scores }: HighscoreProps) {
             <table className="w-full border text-sm shadow-sm">
                 <thead className="bg-white/10 text-left">
                     <tr>
-                        <th className="w-1/3 border border-white/10 p-2">Name</th>
-                        <th className="w-1/3 border border-white/10 p-2">Date</th>
-                        <th className="w-1/3 border border-white/10 p-2">Score</th>
+                        <th className="w-1/6 border border-white/10 p-2">#</th>
+                        <th className="w-2/6 border border-white/10 p-2">Name</th>
+                        <th className="w-2/6 border border-white/10 p-2">Date</th>
+                        <th className="w-1/6 border border-white/10 p-2">Score</th>
                     </tr>
                 </thead>
                 <tbody className="text-left">
-                    {scores?.map((item) => (
+                    {scores?.map((item, index) => (
                         <tr key={item.id}>
+                            <th className="border border-white/10 p-2">{index + 1}</th>
                             <th className="border border-white/10 p-2">{item.username}</th>
                             <th className="border border-white/10 p-2">{item.date}</th>
                             <th className="border border-white/10 p-2">{item.score}</th>
