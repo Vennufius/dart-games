@@ -168,7 +168,7 @@ const HighSegmentScoring: NextPage = () => {
                         </div>
                     )}
                 </div>
-                {highSegmentScoringQuery.data && <Highscores scores={highSegmentScoringQuery.data.map(item => ({ id: item.id, username: item.user.name, date: item.createdAt.toLocaleDateString(), score: item.score }))} />}
+                {highSegmentScoringQuery.data && <Highscores scores={highSegmentScoringQuery.data.map(item => ({ id: item.id, username: item.user.name || '', date: item.createdAt.toLocaleDateString(), score: item.score }))} />}
             </div>
         </>
     );
