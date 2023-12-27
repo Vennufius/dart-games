@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { useState } from "react";
 import { api } from "../utils/api";
-import Highscores from "./highscores";
+import Highscores from "../components/Highscores";
 
 const HighSegmentScoring: NextPage = () => {
     const MAX_ROUNDS = 5;
